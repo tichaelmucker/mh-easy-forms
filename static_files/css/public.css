@@ -1,0 +1,253 @@
+/**
+ * This file is used in public forms
+ */
+
+/**
+ * Alerts
+ */
+.alert {
+    color: #ffffff;
+    font-size: 18px;
+    border-left-width: 1px;
+}
+.alert-success {
+    background-color: #41ad49;
+    border-color: #3a9a41;
+}
+.alert-danger {
+    background-color: #ff0000;
+    border: 0;
+}
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox,
+.has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label,
+.has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
+    color: #ff0000;
+}
+.has-error .form-control {
+    border-color: #ff0000;
+}
+
+/**
+ * Embed
+ */
+.app-embed {
+    /*padding: 0 1px;*/
+}
+.app-embed .legend {
+    margin-top: 0;
+}
+
+/**
+ * Form
+ */
+
+.app-form, .app-forms {
+    padding-top: 15px;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .app-form, .app-forms {
+        padding: 20px;
+    }
+}
+.app-form .app-name, .app-forms .app-name {
+    font-size: 20px;
+}
+.app-form .app-name:before, .app-forms .app-name:before {
+    font-family: 'Glyphicons Regular';
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: -1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\E151";
+}
+
+/**
+ * Preview
+ */
+.app-preview {
+    padding: 20px;
+}
+
+/**
+ New Checkbox and Radio Button display
+ */
+#form-app .inline-control .control-label,
+#form-app .inline-control .control-label {
+    width: 100%;
+}
+#form-app .inline-control input[type=checkbox],
+#form-app .checkbox input[type=checkbox],
+#form-app .radio input[type=radio],
+#form-app .inline-control input[type=radio]
+{
+    position: relative;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+#form-app label.checkbox-inline,
+#form-app label.radio-inline {
+    padding-left: 3px;
+    padding-top: 0;
+    vertical-align: middle;
+}
+/**
+ Custom Checkbox and Radio Button
+ */
+.custom-control .radio,
+.custom-control .checkbox,
+.custom-control .inline-control-radio,
+.custom-control .inline-control-checkbox {
+    padding-left: 0;
+    position: relative;
+    display: block;
+}
+.custom-control .radio input,
+.custom-control .checkbox input,
+.custom-control .inline-control-radio input,
+.custom-control .inline-control-checkbox input {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    margin-left: -16px;
+}
+.custom-control .radio input:disabled,
+.custom-control .checkbox input:disabled,
+.custom-control .inline-control-radio input:disabled,
+.custom-control .inline-control-checkbox input:disabled {
+    cursor: not-allowed;
+}
+.custom-control .radio input:checked + label::before,
+.custom-control .checkbox input:checked + label::before,
+.custom-control .inline-control-radio input:checked + label::before,
+.custom-control .inline-control-checkbox input:checked + label::before {
+    border-color: #3498db;
+}
+.custom-control .radio input:checked + label::after,
+.custom-control .checkbox input:checked + label::after,
+.custom-control .inline-control-radio input:checked + label::after,
+.custom-control .inline-control-checkbox input:checked + label::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 4px;
+    top: 8px;
+    margin-left: -16px;
+    border: 1px solid #3498db;
+    border-radius: 50%;
+    background-color: #3498db;
+}
+.custom-control .radio label,
+.custom-control .checkbox label,
+.custom-control .inline-control-radio label,
+.custom-control .inline-control-checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+}
+.custom-control .radio label::before,
+.custom-control .checkbox label::before,
+.custom-control .inline-control-radio label::before,
+.custom-control .inline-control-checkbox label::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 4px;
+    margin-left: -16px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.custom-control .radio label.control-label,
+.custom-control .checkbox label.control-label,
+.custom-control .inline-control-radio label.control-label,
+.custom-control .inline-control-checkbox label.control-label {
+    padding-left: 0;
+}
+.custom-control .radio label.control-label::before,
+.custom-control .checkbox label.control-label::before,
+.custom-control .inline-control-radio label.control-label::before,
+.custom-control .inline-control-checkbox label.control-label::before {
+    display: none;
+}
+.custom-control .radio.disabled input:checked + label::before,
+.custom-control .checkbox.disabled input:checked + label::before,
+.custom-control .inline-control-radio.disabled input:checked + label::before,
+.custom-control .inline-control-checkbox.disabled input:checked + label::before,
+.custom-control .radio.disabled input:checked + label::after,
+.custom-control .checkbox.disabled input:checked + label::after,
+.custom-control .inline-control-radio.disabled input:checked + label::after,
+.custom-control .inline-control-checkbox.disabled input:checked + label::after {
+    opacity: 0.54;
+}
+.custom-control .radio.disabled label,
+.custom-control .checkbox.disabled label,
+.custom-control .inline-control-radio.disabled label,
+.custom-control .inline-control-checkbox.disabled label {
+    color: #ccc;
+}
+.custom-control .radio.disabled label.control-label,
+.custom-control .checkbox.disabled label.control-label,
+.custom-control .inline-control-radio.disabled label.control-label,
+.custom-control .inline-control-checkbox.disabled label.control-label {
+    color: inherit;
+}
+.custom-control .radio.disabled label::before,
+.custom-control .checkbox.disabled label::before,
+.custom-control .inline-control-radio.disabled label::before,
+.custom-control .inline-control-checkbox.disabled label::before {
+    opacity: 0.54;
+    border-color: #ccc;
+}
+.custom-control .checkbox input:checked + label::before,
+.custom-control .inline-control-checkbox input:checked + label::before {
+    border-color: #3498db;
+    background-color: #3498db;
+}
+.custom-control .checkbox input:checked + label::after,
+.custom-control .inline-control-checkbox input:checked + label::after {
+    content: "\e207";
+    font-family: 'Glyphicons Regular';
+    font-size: 9px;
+    color: #fff;
+    top: 4px;
+    left: 2px;
+    border-color: transparent;
+    background-color: transparent;
+}
+.custom-control .checkbox label::before,
+.custom-control .inline-control-checkbox label::before {
+    border-radius: 2px;
+}
+.custom-control .inline-control-radio label,
+.custom-control .inline-control-checkbox label {
+    padding-right: 16px;
+}
+
+
+
+/**************************
+ * Don't remove this
+ **************************/
+
+/*
+ * Hide all except first Fieldset (Multistep Forms)
+ */
+#form-app fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*
+ * Clear floating columns in multi-column forms
+ */
+#form-app .snippet {
+    display: block !important;
+    clear:both;
+}
